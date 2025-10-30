@@ -1,0 +1,30 @@
+
+.image-card:hover {
+    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4;
+}
+
+.image-card {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    transition: tranform 0.3s, box-shadhow 0.3s;
+    display: block;
+    margin: 10px auto;
+    object-fit: contain;
+}
+
+
+h3 {
+    font-family: "Rubik", sans-serif;
+    width: 60%;
+    max-width: 30rem;
+    margin: 2rem auto;
+    padding: 2removeEventListener;
+    background-color: #ddf3f4;
+    border-radius: 0pageXOffset;
+
+    font-size: 0.75rem;
+    margin: 0;
+    color: #494e4f;
+}

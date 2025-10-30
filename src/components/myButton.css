@@ -1,0 +1,28 @@
+.mybutton {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.4s;
+}
+
+.mybutton:focus {
+  outline: 2px solid #ffffff;
+}
+
+.mybutton-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg, #ff7eb3, #ff758c);
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.mybutton:hover{
+  background: linear-gradient(90deg, #ffa8c0, #ff7eb3);
+}

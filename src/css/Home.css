@@ -1,0 +1,67 @@
+/* Cute footer styling */
+.footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.card {
+  background: #fff0f7;
+  padding: 1rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(255, 120, 160, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(255, 120, 160, 0.3);
+}
+
+.read-me {
+  display: inline-block;
+  background: #fff0f7;        /* soft pink bubble */
+  color: #ff6fa8;             /* cute pink text */
+  padding: 8px 18px;
+  font-size: 1.05rem;
+  border-radius: 20px;        /* rounded pill shape */
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(255, 120, 160, 0.25);
+  letter-spacing: 0.3px;
+  animation: fadeUp 0.8s ease-out;
+}
+
+/* Soft fade animation for a cute touch */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}.logo-wrapper {
+  display: inline-block; /* shrink-wraps to logo naturally */
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.logo-wrapper img {
+  display: block; /* removes inline spacing issues */
+  width: auto;    /* keeps natural width */
+  max-width: 100%; /* responsive */
+  height: auto;
+}
+
+.logo-wrapper::after {
+  content: "";
+  display: block;
+  width: 100%;      /* matches logo width */
+  height: 12px;          /* taller line to match bigger peaks */
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6 Q6 0 12 6 T24 6 T36 6 T48 6 T60 6 T72 6 T84 6 T96 6 T108 6 T120 6' stroke='%23ff99b3' fill='transparent' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;       /* repeat to fill logo width */
+  background-size: auto 100%;        /* full height, auto width */
+  margin-top: 32px;
+}

@@ -1,0 +1,140 @@
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns of equal width */
+  gap: 20px; /* spacing between cards */
+  padding: 10px 0;
+}
+
+
+.image-title {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 220px; /* fixed max width for consistency */
+  margin: 0 auto;   /* center within the column */
+}
+
+.grid-item img {
+  width: 100%;       /* fills the grid item */
+  height: 200px;     /* fixed height for uniform cards */
+  object-fit: cover; /* crop/scale image nicely */
+  border-radius: 8px;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+
+.image-link {
+  text-decoration: none; /* remove underline */
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-link img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+  display: block;
+}
+
+.grid-item {
+  position: relative;
+}
+
+.image-caption {
+  margin-top: 6px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  color: #ff758c; /* pastel pink */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px; /* space between heart and name */
+}
+
+.favorite-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.favorite-btn.favorited {
+  color: red;
+}
+
+.favorites-toggle {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.favorites-toggle button {
+  padding: 6px 12px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  border: 1px solid #ff758c;
+  background: white;
+  color: #ff758c;
+  cursor: pointer;
+}
+
+.favorites-toggle button:hover {
+  background: #ff758c;
+  color: white;
+}
+
+
+/* MOBILE: collapse to 1 project per row */
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr;  /* single column */
+    gap: 15px;                   /* spacing between rows */
+  }
+
+  .grid-item img {
+    height: auto;                /* let image scale naturally */
+    width: 100%;
+  }
+
+  .image-caption {
+    font-size: 0.9rem;
+  }
+}
+
+/* Add this for mobile-friendly spacing */
+@media (max-width: 480px) {
+  .collection-content {
+    padding-bottom: 60px; /* extra space at the bottom */
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;  /* single column */
+    gap: 15px;
+  }
+
+  .grid-item img {
+    height: auto;                /* let image scale naturally */
+    width: 100%;
+  }
+
+  .image-caption {
+    font-size: 0.9rem;
+  }
+
+  .add-project-row {
+    margin-top: 20px; /* ensure visible on mobile */
+  }
+}

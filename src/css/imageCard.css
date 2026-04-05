@@ -1,0 +1,17 @@
+.imageCard {
+  width: 100%;               /* takes full width of its grid cell */
+  aspect-ratio: 1 / 1;       /* keeps card square, optional if you want squares */
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #f8f8f8; /* placeholder color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.imageCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;       /* ensures whole image is visible */
+}

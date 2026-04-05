@@ -1,0 +1,150 @@
+.back-link {
+  display: inline-block;
+  background: #ffe8f4; /* soft pink */
+  color: #d14c89;
+  font-weight: 600;
+  padding: 10px 16px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 3px 8px rgba(0,0,0,0xa.12);
+  transition: all 0.2s ease;
+  border: 2px solid #ffbcd9;
+}
+
+.back-link:hover {
+  background: #ffd6ec;
+  color: #ff66b2;
+  transform: translateY(-2px);
+}
+
+.back-link:active {
+  transform: translateY(0px);
+}
+
+.project-detail ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Page Layout */
+.project-detail {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  margin-top: 40px;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.project-detail h1 {
+  text-align: center;
+  color: #ff758c;
+  border-bottom: 2px solid #ff758c;
+  margin-bottom: 30px;
+}
+
+.back-link-page h1 {
+  text-align: center;
+  color: #ff758c;
+  border-bottom: 2px solid #ff758c;
+  margin-bottom: 30px;
+}
+
+.project-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.project-info .info-box {
+  background: #fff0f6; /* soft pink */
+  border: 1px solid #ffbcd9;
+  border-radius: 12px;
+  padding: 12px 16px;
+  min-width: 120px;
+  flex: 1 1 200px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  font-weight: 500;
+  color: #d14c89;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+/* Materials Section */
+.materials-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* Individual Material Set */
+.material-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px; /* space between sets */
+  padding-bottom: 5px;
+}
+
+/* Only add squiggly line to multi-set material sets */
+.material-set.multi-set::after {
+  content: "";
+  display: block;
+  width: 100%;           /* matches logo width */
+  height: 12px;          /* taller line to match bigger peaks */
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6 Q6 0 12 6 T24 6 T36 6 T48 6 T60 6 T72 6 T84 6 T96 6 T108 6 T120 6' stroke='%23ffb6c1' fill='transparent' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;       /* repeat to fill logo width */
+  background-size: auto 100%;        /* full height, auto width */
+  margin-top: 8px;
+  
+}
+
+/* Material Bubble */
+.material-bubble {
+  background-color: #ffe0f0; /* default soft pink */
+  border: 1px solid #ffbcd9;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 0.95rem;
+  color: #d14c89;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.option-tag {
+  display: inline-block;
+  border-left: 4px solid #ffb6c1; /* pastel pink */
+  padding-left: 8px;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 500;
+}
+
+/* Directions Section Title */
+.directions-section h2 {
+  text-align: center;
+  color: #ff758c;
+  font-size: 1.6rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Directions Image Layout */
+.directions-list img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  display: block;
+}

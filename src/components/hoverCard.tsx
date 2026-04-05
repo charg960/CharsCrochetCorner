@@ -1,4 +1,4 @@
-import "./hoverCard.css"
+import "../css/hoverCard.css"
 
 interface Props {
     image: string;

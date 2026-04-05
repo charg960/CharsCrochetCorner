@@ -1,0 +1,137 @@
+/* ---------------- GLOBAL ---------------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: #fff0f7; /* soft pink background */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* ---------------- LAYOUT ---------------- */
+.abbrev-layout {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: transparent; /* pink from body shows */
+  box-sizing: border-box;
+}
+
+.abbrev-page-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* center the page card */
+  width: 100%;
+  background-color: transparent;
+}
+
+/* ---------------- PAGE CARD ---------------- */
+.abbrev-page {
+  width: 100%;
+  max-width: 900px;
+  background-color: #fafafa; /* white page */
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  color: #333;
+  padding: 30px;
+  text-align: center;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.abbrev-page h1 {
+  text-align: center;
+  color: #ff758c;
+  border-bottom: 2px solid #ff758c;
+  margin-bottom: 30px;
+}
+
+/* ---------------- SECTION HEADINGS ---------------- */
+.abbrev-section h2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #fff0f5;
+  padding: 5px 12px;
+  border-radius: 12px;
+  color: #ff7eb3;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* ---------------- DESCRIPTION LIST ---------------- */
+.abbrev-list {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.abbrev-list dt {
+  font-weight: 600;
+  color: #ff758c;
+  margin-top: 15px;
+}
+
+.abbrev-list dd {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ---------------- MOBILE FIXES ---------------- */
+@media (max-width: 768px) {
+  .abbrev-layout {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    overflow-x: hidden;
+  }
+
+  .level-menu {
+    width: 100%;
+    position: relative;  
+    top: auto;
+    margin-bottom: 15px;
+    max-height: 50px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .level-menu.open {
+    max-height: 500px;
+  }
+
+  .abbrev-page {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .abbrev-page h1 {
+    font-size: 1.4rem;
+  }
+
+  .abbrev-section h2 {
+    font-size: 1.1rem;
+  }
+
+  .abbrev-list dt {
+    font-size: 0.95rem;
+    margin-top: 10px;
+  }
+
+  .abbrev-list dd {
+    font-size: 0.9rem;
+    margin-left: 10px;
+    margin-bottom: 8px;
+  }
+
+  /* Invisible anchors adjustment */
+  .abbrev-section div[id] {
+    top: -50px;
+  }
+}

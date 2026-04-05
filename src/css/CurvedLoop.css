@@ -1,0 +1,28 @@
+.curved-loop-jacket {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;   /* centers inside the box */
+  align-items: center;       /* optional */
+  position: relative;
+}
+
+.curved-loop-svg {
+  width: 100%;
+  height: auto;            /* let height follow content */
+  aspect-ratio: auto;      /* remove forced tall ratio */
+  overflow: visible;
+  display: block;
+  dominant-baseline: hanging;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%) translateX(15%);
+
+  font-size: 4rem;         /* adjust as needed */
+  fill: #ff758c;  
+  font-weight: 700;
+  text-transform: uppercase; /*or none!!*/
+  line-height: 1;
+}

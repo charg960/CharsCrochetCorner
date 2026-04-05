@@ -1,0 +1,94 @@
+.pill-btn {
+  background: linear-gradient(90deg, #ff7eb3, #ff758c);
+  color: white;
+  border: none;
+  border-radius: 50px; /* pill shape */
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s, background 0.4s;
+  text-decoration: none; /* for links */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pill-btn:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(90deg, #ffa8c0, #ff7eb3);
+}
+
+.pill-btn.active {
+  box-shadow: 0 0 0 2px #ff758c inset; /* optional highlight for active */
+}
+
+.pill-btn:focus {
+  outline: 2px solid #ffffff;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: center;  /* buttons remain centered */
+  align-items: center;
+  padding: 70px 0px;       /* more top/bottom space */
+  min-height: 80px;         /* ensures navbar is taller than logo */
+  box-sizing: border-box;   /* include padding in height */
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+  margin-left: 80px; /* enough space for logo */
+}
+
+/* ---------- MOBILE: up to 600px ---------- */
+@media (max-width: 600px) {
+  .top-bar {
+    flex-direction: column;   /* stack logo/buttons vertically */
+    padding: 20px 10px;       /* reduce top/bottom padding */
+    min-height: auto;          /* let height adjust */
+  }
+
+  .nav-buttons {
+    flex-direction: column;   /* stack buttons vertically */
+    gap: 10px;                /* smaller gap between buttons */
+    margin-left: 0;           /* remove desktop logo spacing */
+    width: 100%;              /* full width container */
+    align-items: center;      /* center buttons horizontally */
+  }
+
+  .pill-btn {
+    width: 90%;               /* make buttons take most of screen width */
+    max-width: 300px;         /* optional max width */
+    padding: 8px 15px;        /* slightly smaller padding */
+    font-size: 0.95rem;       /* shrink font */
+  }
+
+  @media (max-width: 600px) {
+    .top-bar {
+      flex-direction: row;        /* keep horizontal layout */
+      justify-content: center;    /* center buttons */
+      align-items: center;
+      padding: 175px 15px 10px 10px;         /* smaller padding */
+    }
+
+    .nav-buttons {
+      flex-direction: row;        /* keep buttons in a row */
+      gap: 6px;                   /* reduce spacing between buttons */
+      margin-left: 0;             /* remove desktop offset */
+      width: auto;                /* auto width so they fit */
+    }
+
+    .pill-btn {
+      width: auto;                /* no forced width */
+      max-width: 100px;           /* shorter max width */
+      padding: 6px 10px;          /* smaller padding */
+      font-size: 0.8rem;          /* smaller font size */
+    }
+  }
+
+  .logo {
+    margin-top: 10px;  /* move logo down 10px on phones */
+  }
+
+}

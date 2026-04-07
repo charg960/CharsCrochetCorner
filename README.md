@@ -27,46 +27,28 @@ Tools: VS Code, Browser DevTools, Localhost server (XAMPP/MAMP)
 
 **Project Structure**
 /src
-
   /components
-  
     - ProjectDetail.js
-    
     - TopBar.js
-    
     - AddProject.js
-    
     - DirectionsPage.js
-    
   /pages
-  
     - Home.js
-    
     - Collections.js
-    
     - AbbreviationsAndTips.js
-    
     - ContactMe.js
-    
   /css
-  
     - App.css
-    
+
 /public
-
   /images
-  
     - Project images, logos
-    
-/phpFiles
 
-  - get_projects.php
-    
-  - add_project.php
-    
-  - update_project.php
-    
-  - delete_project.php
+/phpFiles
+  - get_projects.php        # Fetches project data from backend
+  - add_project.php        # Adds new project
+  - update_project.php     # Updates existing project
+  - delete_project.php     # Deletes a project
     
 App.js – Main routing and page rendering
 get_projects.php – Fetches project data from backend

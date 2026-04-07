@@ -1,73 +1,70 @@
-# React + TypeScript + Vite
+# CSC 319: CharsCrochetCorner (Full-Stack Interactive Project Gallery)
+Project contributions from Charlotte Dickson.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Purpose
+To create a web platform for displaying and managing crochet projects, patterns, and tutorials. Built with React, PHP, CSS, and JSON, it combines interactive UI with a simple backend to organize and showcase creative work.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
+This project showcases crochet projects with step-by-step patterns, interactive UI, and data-driven components. It emphasizes React component design, backend integration, and responsive web design.
 
-## React Compiler
+## Audience:
+- Crochet lovers looking for patterns
+- Students learning full-stack web development
+- Developers exploring React + PHP + JSON integration
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Features
+Project Gallery: Browse crochet projects with images, difficulty, materials, and size
+Pattern Pages: Step-by-step pattern images for each project
+Interactive Navigation: React routing for project details, collections, and tips
+Data Management: PHP + JSON backend to fetch project details
+Modular Components: Separate React components for top bar, project details, directions, and contact
+Tech Stack
+Languages: JavaScript, PHP, CSS
+Frameworks/Libraries: React, React Router
+Data/Storage: JSON files for project data, PHP backend for fetching
+Tools: VS Code, Browser DevTools, Localhost server (XAMPP/MAMP)
 
-## Expanding the ESLint configuration
+**Project Structure**
+/src
+  /components
+    - ProjectDetail.js
+    - TopBar.js
+    - AddProject.js
+    - DirectionsPage.js
+  /pages
+    - Home.js
+    - Collections.js
+    - AbbreviationsAndTips.js
+    - ContactMe.js
+  /css
+    - App.css
+/public
+  /images
+    - Project images, logos
+/phpFiles
+  - get_projects.php
+  - add_project.php
+  - update_project.php
+  - delete_project.php
+App.js – Main routing and page rendering
+get_projects.php – Fetches project data from backend
+CSS – Styles UI components and galleries
+JSON – Stores project metadata like materials, difficulty, and images
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# Usage
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Clone the repository:
+git clone https://github.com/CHARG960/CharsCrochetCorner.git
+cd CharsCrochetCorner
+## Start your PHP server (e.g., XAMPP or MAMP) to serve /phpFiles
+## Install React dependencies and start:
+npm install
+npm start
+## Navigate to http://localhost:3000 to explore the crochet project website.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Contact
+Name: Charlotte Dickson
+GitHub: CHARG960
+LinkedIn: Charlotte Dickson
+Email: charlotte.dickson@my.maryvillecollege.edu

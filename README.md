@@ -52,16 +52,15 @@ get_projects.php – Fetches project data from backend
 CSS – Styles UI components and galleries
 JSON – Stores project metadata like materials, difficulty, and images
 
-# Usage
-
-## Clone the repository:
+## Usage
+- Clone the repository:
 git clone https://github.com/CHARG960/CharsCrochetCorner.git
 cd CharsCrochetCorner
-## Start your PHP server (e.g., XAMPP or MAMP) to serve /phpFiles
-## Install React dependencies and start:
+- Start your PHP server (e.g., XAMPP or MAMP) to serve /phpFiles
+- Install React dependencies and start:
 npm install
 npm start
-## Navigate to http://localhost:3000 to explore the crochet project website.
+- Navigate to http://localhost:3000 to explore the crochet project website.
 
 # Contact
 Name: Charlotte Dickson

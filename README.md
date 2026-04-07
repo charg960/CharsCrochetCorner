@@ -2,10 +2,10 @@
 Project contributions from Charlotte Dickson.
 
 
-## Purpose
+## Purpose:
 To create a web platform for displaying and managing crochet projects, patterns, and tutorials. It uses React, PHP, CSS, and JSON, to combine interactive UI with a simple backend to organize and showcase creative work.
 
-## Overview
+## Overview:
 This project showcases crochet projects with step-by-step patterns, interactive UI, and data-driven components. It emphasizes React component design, backend integration, and maintainable web design.
 
 ## Audience:
@@ -13,7 +13,7 @@ This project showcases crochet projects with step-by-step patterns, interactive 
 - Students learning full-stack web development
 - Developers exploring React + PHP + JSON integration
 
-# Features
+## Features:
 - Project Gallery: Browse crochet projects with images, difficulty, materials, and size
 - Pattern Pages: Step-by-step pattern images for each project
 - Interactive Navigation: React routing for project details, collections, and tips
@@ -25,7 +25,7 @@ This project showcases crochet projects with step-by-step patterns, interactive 
 - Data/Storage: JSON files for project data, PHP backend for fetching
 - Tools: VS Code, Browser DevTools, Localhost server (XAMPP/MAMP)
 
-## Usage
+## Usage:
 - Clone the repository:
 git clone https://github.com/CHARG960/CharsCrochetCorner.git
 cd CharsCrochetCorner

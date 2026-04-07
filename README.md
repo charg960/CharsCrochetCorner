@@ -15,7 +15,7 @@ This project showcases crochet projects with step-by-step patterns, interactive 
 
 # Features
 - Project Gallery: Browse crochet projects with images, difficulty, materials, and size
-- - Pattern Pages: Step-by-step pattern images for each project
+- Pattern Pages: Step-by-step pattern images for each project
 - Interactive Navigation: React routing for project details, collections, and tips
 - Data Management: PHP + JSON backend to fetch project details
 - Modular Components: Separate React components for top bar, project details, directions, and contact
@@ -35,10 +35,3 @@ npm install
 npm start
 - Navigate to http://localhost:3000 to explore the crochet project website.
 
-# Contact
-Name: Charlotte Dickson
-GitHub: CHARG960
-
-LinkedIn: Charlotte Dickson
-
-Email: charlotte.dickson@my.maryvillecollege.edu
